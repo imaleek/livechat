@@ -1,4 +1,7 @@
-{
+const { defineConfig } = require('cypress')
+
+module.exports = defineConfig({
+  e2e: {
   "baseUrl": "http://traefik",
   "video": true,
   "screenshotsFolder": "public/cypress/screenshots",
@@ -7,4 +10,5 @@
   "supportFile": false,
   "fixturesFolder": false,
   "pluginsFile": false
-}
+  }
+})
